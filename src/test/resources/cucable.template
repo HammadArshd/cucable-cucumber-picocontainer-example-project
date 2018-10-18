@@ -1,0 +1,12 @@
+import cucumber.api.CucumberOptions;
+
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+@CucumberOptions(
+        features = {"target/parallel/features/[CUCABLE:FEATURE].feature"},
+        plugin = {"json:target/cucumber-report/[CUCABLE:RUNNER].json"},
+        [CUCABLE:CUSTOM:comment]
+)
+public class [CUCABLE:RUNNER] extends AbstractTestNGCucumberTests{
+    // [CUCABLE:CUSTOM:comment]
+}
